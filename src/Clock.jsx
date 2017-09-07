@@ -31,7 +31,7 @@ class Clock extends Component {
     }
     render() {
         return(
-            <div>
+            <div className="Clock-entity">
                 <div>{ this.state.days } days</div>
                 <div>{ this.state.hours } hours</div>
                 <div>{ this.state.minutes } minutes</div>

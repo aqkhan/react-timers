@@ -51,8 +51,8 @@ class StopWatch extends Component {
         return(
             <div className="stopwatch">
                 <h2>Stop watch</h2>
-                <div>{this.leading0(this.state.hours)} Hours : {this.leading0(this.state.minutes)} Minutes : {this.leading0(this.state.seconds)} Seconds</div>
-                <button onClick={() => this.startTimer()}>{this.state.buttonState}</button>
+                <div className="stopwatch-clock">{this.leading0(this.state.hours)} Hours : {this.leading0(this.state.minutes)} Minutes : {this.leading0(this.state.seconds)} Seconds</div>
+                <button onClick={() => this.startTimer()} className={(this.state.buttonState === 'START') ? 'stopwatch-start' : 'stopwatch-stop'}>{this.state.buttonState}</button>
             </div>
         );
     }
